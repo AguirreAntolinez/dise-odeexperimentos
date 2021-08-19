@@ -4,7 +4,7 @@ anova<-aov(Var~factor1,data = df) # "Var" es el nombre de la variable y "factor1
 summary(anova)
 # Gráficas de los residuales para verificar supuestos
 par(mfrow=c(1,3))
-plot(anova0)
+plot(anova)
 #Test de LSD para comparación de medias
 print(LSD.test(anova,"factor1"))
 #Contrastes
